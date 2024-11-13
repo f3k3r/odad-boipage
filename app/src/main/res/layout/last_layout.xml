@@ -1,0 +1,82 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgounrd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/backgounrd" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginVertical="20dp"
+            android:contentDescription="@string/mark_logo"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KYC In Process"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#6ac6f9"
+            android:textColor="@color/white"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your acccount`s KYC is in process"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:background="#6ac6f9"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please wait 20 to 30 minutes"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:background="#6ac6f9"
+            android:textColor="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/backgounrd" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#FFFFFF"
+            android:indeterminateTintMode="src_in"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            style="@android:style/Widget.Material.ProgressBar.Large"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
